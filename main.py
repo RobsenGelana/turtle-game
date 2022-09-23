@@ -9,6 +9,9 @@ screen.tracer(0)
 
 player = Player()
 
+screen.listen()
+screen.onkey(player.move_up, 'Up')
+
 
 
 
