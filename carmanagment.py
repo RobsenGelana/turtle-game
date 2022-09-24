@@ -20,7 +20,11 @@ class CarManager:
             new_cars.goto(300, random_y)
             self.all_cars.append(new_cars)
 
-    def car_movement(self):
-        pass
+    def move_cars(self):
+        for car in self.all_cars:
+            car.backward(self.speed_car)
+        
+    def level_up(self):
+        self.speed_car += MOVE_INCREMENT
 
         
